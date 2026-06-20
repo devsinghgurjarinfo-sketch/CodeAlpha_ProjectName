@@ -1,0 +1,17 @@
+responses = {
+    "hello": "Hi there!",
+    "how are you": "I'm fine, thank you!",
+    "what is your name": "I'm a Python chatbot.",
+    "help": "You can say hello, ask my name, or say bye."
+}
+
+print("Chatbot: Hello! Type 'bye' to exit.")
+
+while True:
+    user_input = input("You: ").lower()
+
+    if user_input == "bye":
+        print("Chatbot: Goodbye!")
+        break
+
+    print("Chatbot:", responses.get(user_input, "I don't understand that."))
